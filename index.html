@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一个 GitHub 网页</title>
+    <title>My first github website</title>
     <style>
         /* 清除默认边距，确保背景铺满 */
         body, html {
@@ -26,10 +26,12 @@
         /* 文字样式 */
         h1 {
             color: white;
-            font-size: 5rem;    /* 字体大小 */
-            font-weight: 800;   /* 粗体 */
-            text-transform: uppercase; /* 字母大写（可选） */
-            text-shadow: 2px 4px 10px rgba(0,0,0,0.2); /* 淡淡的阴影，让文字更立体 */
+            /* 方法二：最小 2rem，随宽度缩放 10vw，最大 8rem */
+            font-size: clamp(2rem, 10vw, 8rem); 
+            font-weight: 800;
+            text-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+            white-space: nowrap; /* 保持单行显示 */
+            margin: 0;
         }
     </style>
 </head>
