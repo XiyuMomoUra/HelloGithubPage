@@ -32,6 +32,17 @@
             text-shadow: 2px 4px 10px rgba(0,0,0,0.2);
             white-space: nowrap; /* 保持单行显示 */
             margin: 0;
+
+            animation: breath 6s ease-in-out infinite;
+        }
+
+        @keyframes breath {
+            0%, 100% {
+                opacity: 1;    /* 开始和结束时完全不透明 */
+            }
+            50% {
+                opacity: 0.3;  /* 3秒时（50%进度）变淡至30% */
+            }
         }
     </style>
 </head>
